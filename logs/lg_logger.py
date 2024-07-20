@@ -4,7 +4,7 @@ import os
 from Gaggar.settings import BASE_DIR
 
 def log_access(request):
-    access_txt_path = os.path.join(BASE_DIR, 'Logs', 'Access.txt')
+    access_txt_path = os.path.join(BASE_DIR, 'logs', 'Access.txt')
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
     if x_forwarded_for:
         client_ip = x_forwarded_for.split(',')[0].strip()
@@ -19,14 +19,14 @@ def log_access(request):
         access_log.write(f"[{date_time}] : [{url}]/[{request.method}] - {client_ip} - {user_agent}\n")
 
 def log_info(text):
-    access_txt_path = os.path.join(BASE_DIR, 'Logs', 'Access.txt')
+    access_txt_path = os.path.join(BASE_DIR, 'logs', 'Access.txt')
     current_datetime = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     
     with open(access_txt_path, 'a') as file:
         file.write(f"[{current_datetime}] : {text}\n")
 
 def log_error(request, exception):
-    error_txt_path = os.path.join(BASE_DIR, 'Logs', 'Error.txt')
+    error_txt_path = os.path.join(BASE_DIR, 'logs', 'Error.txt')
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
     if x_forwarded_for:
         client_ip = x_forwarded_for.split(',')[0].strip()

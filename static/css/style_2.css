@@ -1,7 +1,7 @@
 .image-container {
     position: relative;
     width: 100vw;
-    height: 100vh; /* Ensure container fills the entire viewport */
+    height: 50vw;
     overflow: hidden;
     text-align: center;
 }
@@ -16,13 +16,204 @@
     object-fit: cover; /* Scale the image while preserving aspect ratio */
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    .image-container {
-        /* width: 100%; */
+.horizontal-timeline .items {
+    border-top: 3px solid #e9ecef;
+  }
+  
+  .horizontal-timeline .items .items-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    margin-right: 0;
+  }
+  
+  .horizontal-timeline .items .items-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #dee2e6;
+    top: 0;
+  }
+  
+  .horizontal-timeline .items .items-list .event-date {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding-top: 8px;
+  }
+  
+  @media (min-width: 1140px) {
+    .horizontal-timeline .items .items-list {
+      display: inline-block;
+      width: 24%;
+      padding-top: 45px;
     }
-    .image-container img {
-        /* width: 100%; */
-        /* height: 100%; */
+  
+    .horizontal-timeline .items .items-list .event-date {
+      top: -40px;
+    }
+  }
+
+
+
+@media (max-width: 576px) {
+    /* Small screen */
+    .text-size {
+        font-size: 20px !important; /* Small screen font size */
+        text-align: center !important;
+    }
+
+    .head-text-size {
+        font-size: 35px !important; /* Small screen font size */
     }
 }
+
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Medium screen */
+    .text-size {
+        font-size: 24px !important; /* Medium screen font size */
+        text-align: center !important;
+    }
+
+    .head-text-size {
+        font-size: 40px !important; /* Medium screen font size */
+    }
+}
+
+@media (min-width: 993px) {
+    /* Large screen */
+    .text-size {
+        font-size: 40px !important; /* Large screen font size */
+        text-align: center !important;
+    }
+
+    .head-text-size {
+        font-size: 50px !important; /* Large screen font size */
+    }
+}
+
+h2{
+    text-align:center;
+    padding: 20px;
+  }
+  /* Slider */
+  
+  .slick-slide {
+      margin: 0px 20px;
+  }
+  
+  .slick-slide img {
+      width: 100%;
+  }
+  
+  .slick-slider
+  {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+              user-select: none;
+      -webkit-touch-callout: none;
+      -khtml-user-select: none;
+      -ms-touch-action: pan-y;
+          touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-list
+  {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+  }
+  .slick-list:focus
+  {
+      outline: none;
+  }
+  .slick-list.dragging
+  {
+      cursor: pointer;
+      cursor: hand;
+  }
+  
+  .slick-slider .slick-track,
+  .slick-slider .slick-list
+  {
+      -webkit-transform: translate3d(0, 0, 0);
+         -moz-transform: translate3d(0, 0, 0);
+          -ms-transform: translate3d(0, 0, 0);
+           -o-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+  }
+  
+  .slick-track
+  {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+  }
+  .slick-track:before,
+  .slick-track:after
+  {
+      display: table;
+      content: '';
+  }
+  .slick-track:after
+  {
+      clear: both;
+  }
+  .slick-loading .slick-track
+  {
+      visibility: hidden;
+  }
+  
+  .slick-slide
+  {
+      display: none;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+  }
+  [dir='rtl'] .slick-slide
+  {
+      float: right;
+  }
+  .slick-slide img
+  {
+      display: block;
+  }
+  .slick-slide.slick-loading img
+  {
+      display: none;
+  }
+  .slick-slide.dragging img
+  {
+      pointer-events: none;
+  }
+  .slick-initialized .slick-slide
+  {
+      display: block;
+  }
+  .slick-loading .slick-slide
+  {
+      visibility: hidden;
+  }
+  .slick-vertical .slick-slide
+  {
+      display: block;
+      height: auto;
+      border: 1px solid transparent;
+  }
+  .slick-arrow.slick-hidden {
+      display: none;
+  }

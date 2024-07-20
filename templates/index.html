@@ -47,17 +47,19 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <!-- <i class="fa fa-home fa-4x text-primary mb-4 d-none d-sm-block"></i> -->
-                            <h1 class="text-uppercase text-white mb-md-4">We sculpt solutions that redefine the industry.</h1>
+                            <h1 class="text-uppercase text-white mb-md-4 text-size">We sculpt solutions that redefine the industry.</h1>
                             <a href="{% url 'contact' %}" class="btn btn-primary py-md-3 px-md-5 mt-2">Contact Us</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="/static/img/carousel-2.jpeg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="image-container">
+                        <img class="" src="/static/img/carousel-2.jpeg" alt="Image">
+                    </div>
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <!-- <i class="fa fa-tools fa-4x text-primary mb-4 d-none d-sm-block"></i> -->
-                            <h1 class="display-2 text-uppercase text-white mb-md-4">We Are Trusted For Your Project</h1>
+                            <h1 class="text-uppercase text-white mb-md-4 text-size">We Are Trusted For Your Project</h1>
                             <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Contact Us</a>
                         </div>
                     </div>
@@ -77,14 +79,13 @@
     </div>
     <!-- Carousel End -->
 
-
     <!-- About Start -->
-    <div class="container-fluid py-6 px-5">
+    <div class="container-fluid py-6 px-4 px-lg-5">
         <div class="row g-5">
             <div class="col-lg-7">
-                <h1 class="display-5 text-uppercase mb-4">We are <span class="text-primary">the Leader</span> in Construction Industry</h1>
-                <h4 class="text-uppercase mb-3 text-body">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum tempor sit diam amet diam et eos labore</h4>
-                <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor</p>
+                <h1 class="display-5 text-uppercase mb-4 head-text-size">Over <span class="text-primary">25 years</span> in FMCG and packaging product industry.</h1>
+                <h4 class="text-uppercase mb-3 text-body">The Ahmedabad plant has 2 main divisions, Preform Manufacturing and Water Production integrated with Packaging.</h4>
+                <p>It is a Fully Automated plant having an End-To-End Process completely In-house right from the stage of Preform manufacturing, blowing bottles, filling & packaging all done under one single roof to ensure quality in the product.</p>
                 <div class="row gx-5 py-2">
                     <div class="col-sm-6 mb-2">
                         <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Perfect Planning</p>
@@ -97,100 +98,154 @@
                         <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>First Working Process</p>
                     </div>
                 </div>
-                <p class="mb-4">Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos labore</p>
-                <img src="/static/img/signature.jpg" alt="">
+                <p class="mb-4">For the past 2 years, we have started exporting 29/25 PET Preforms in Oman, having our depot at Sohar.</p>
+                <!-- <img src="/static/img/signature.jpg" alt=""> -->
             </div>
             <div class="col-lg-5 pb-5" style="min-height: 400px;">
                 <div class="position-relative bg-dark-radial h-100 ms-5">
-                    <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="/static/img/about.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="/static/img/about.jpeg" style="object-fit: cover;">
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
     
+    <div class="container-fluid bg-light py-6 px-4 px-lg-5">
+        <div class="content-lg">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-3">
+                    <div class="margin-t-50 margin-b-30">
+                        <h1 class="text-primary">Why Us?</h1>
+                        <p>We are one of the leading manufacturers of PET-preforms serving multiple industries for the last 1 and a half decades.  We provide a wide array of PET-preforms to various beverages, edible oils, and various other groups across the nation. With strong experience in plastic packaging, PetNext has expanded its product line and range of services immensely over the years. We have the potential to manufacture 800 Tons of PET-preforms across various industries and applications, and PetNext believes in expanding this further over the years.</p>
+                    </div>
+                    <!-- <a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">More...</a> -->
+                </div>
+                <div class="col-lg-6 col-md-6 mb-3">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Vision
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                We aim to become an indispensable partner to our clients by delivering distinguished goods and services that align with their objectives. By offering a wide array of well-crafted and affordable flexible packaging solutions, we strive to enable as many businesses as possible to benefit from our offerings.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                WHO ARE WE
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Our commitment is to craft the finest products without causing any unnecessary harm. We are not limited by conventional practices; our business is dedicated to preserving the environment.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                EXPERIENCE
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                PetNext is one of the leading manufacturers of pet preforms serving multiple industries for the last 1 and a half decade. We provide a wide array of PET-Preforms to various beverages, edible oils, and other groups nationwide.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
 
     <!-- Services Start -->
-    <div class="container-fluid bg-light py-6 px-5">
+    <div class="container-fluid py-6 px-4 px-lg-5">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-4">We Provide <span class="text-primary">The Best</span> Construction Services</h1>
+            <h1 class="display-5 text-uppercase mb-5 pb-5">We Provide <span class="text-primary">The Best</span> Services</h1>
         </div>
         <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 mb-5 mt-5">
                 <div class="service-item bg-white d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="/static/img/service-1.jpg" alt="">
+                    <!-- <img class="img-fluid" src="/static/img/service-1.jpg" alt=""> -->
                     <div class="service-icon bg-white">
                         <i class="fa fa-3x fa-building text-primary"></i>
                     </div>
                     <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Building Construction</h4>
-                        <p>Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet magna elitr amet kasd diam duo</p>
-                        <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        <h4 class="text-uppercase mb-3">Management Excellence</h4>
+                        <p>Our leadership team boasts extensive experience in the plastic packaging and PET industry. This seasoned group oversees every aspect of our operations, ensuring that our products meet the highest standards.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 mb-5 mt-5">
                 <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="/static/img/service-2.jpg" alt="">
+                    <!-- <img class="img-fluid" src="/static/img/service-2.jpg" alt=""> -->
                     <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-home text-primary"></i>
+                        <i class="fa fa-3x fa-lightbulb text-primary"></i>
                     </div>
                     <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">House Renovation</h4>
-                        <p>Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet magna elitr amet kasd diam duo</p>
-                        <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        <h4 class="text-uppercase mb-3">Uncompromising Quality</h4>
+                        <p>Quality is the cornerstone of our operations. We employ stringent quality control measures to guarantee that each PET preform meets our exacting standards. Our commitment to quality extends from material selection to the final product, earning us a reputation for reliability and consistency.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 mb-5 mt-5">
                 <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="/static/img/service-3.jpg" alt="">
+                    <!-- <img class="img-fluid" src="/static/img/service-3.jpg" alt=""> -->
                     <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-drafting-compass text-primary"></i>
+                        <i class="fa fa-3x fa-recycle text-primary"></i>
                     </div>
                     <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Architecture Design</h4>
-                        <p>Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet magna elitr amet kasd diam duo</p>
-                        <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        <h4 class="text-uppercase mb-3">Environmental Responsibility</h4>
+                        <p>We are deeply committed to environmental sustainability. Our innovative manufacturing processes prioritize eco-friendly practices, minimizing waste and carbon footprint. By choosing PETNEXT, businesses not only benefit from superior products but also contribute to a greener, more sustainable future.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 mb-5 mt-5">
                 <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="/static/img/service-4.jpg" alt="">
+                    <!-- <img class="img-fluid" src="/static/img/service-4.jpg" alt=""> -->
                     <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-palette text-primary"></i>
+                        <i class="fa fa-3x fa-cubes text-primary"></i>
                     </div>
                     <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Interior Design</h4>
-                        <p>Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet magna elitr amet kasd diam duo</p>
-                        <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        <h4 class="text-uppercase mb-3">Corporate Culture</h4>
+                        <p>Our company culture is centered around collaboration, innovation, and continuous improvement. Our teams work together seamlessly, constantly seeking new ways to enhance our products and services. This culture of innovation ensures that we stay at the forefront of the industry, delivering cutting-edge solutions to our clients.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 mb-5 mt-5">
                 <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="/static/img/service-5.jpg" alt="">
+                    <!-- <img class="img-fluid" src="/static/img/service-5.jpg" alt=""> -->
                     <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-tools text-primary"></i>
+                        <i class="fa fa-3x fa-chart-line text-primary"></i>
                     </div>
                     <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Fixing & Support</h4>
-                        <p>Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet magna elitr amet kasd diam duo</p>
-                        <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        <h4 class="text-uppercase mb-3">Mission-driven</h4>
+                        <p>We are driven by a clear mission: to deliver exceptional PET preforms that help our clients achieve their goals. Every decision we make is guided by this mission, ensuring that our products and services always serve the best interests of our clients.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 mb-5 mt-5">
                 <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="/static/img/service-6.jpg" alt="">
+                    <!-- <img class="img-fluid" src="/static/img/service-6.jpg" alt=""> -->
                     <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-paint-brush text-primary"></i>
+                        <i class="fa fa-3x fa-cogs text-primary"></i>
                     </div>
                     <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Painting</h4>
-                        <p>Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet magna elitr amet kasd diam duo</p>
-                        <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        <h4 class="text-uppercase mb-3">Innovative Solutions</h4>
+                        <p>We are at the forefront of industry innovation, continuously developing new solutions to meet the changing demands of the market. Our cutting-edge technology and forward-thinking approach ensure that we provide the most advanced and efficient PET preform products</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -198,16 +253,89 @@
     </div>
     <!-- Services End -->
 
+    <div class="container-fluid bg-light py-6 px-4 px-lg-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-5 pb-5">Time <span class="text-primary">Line</span></h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+      
+            <div class="horizontal-timeline">
+      
+              <ul class="list-inline items">
+                <li class="list-inline-item items-list">
+                  <div class="px-4">
+                    <div class="event-date badge bg-info">2020</div>
+                    <!-- <h5 class="pt-2">Event One</h5> -->
+                    <ul class="text-muted text-start">
+                        <li>Induction of new partners</li>
+                        <li>Increase and influx of new equity</li>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                      </ul>
+                  </div>
+                </li>
+
+                <li class="list-inline-item items-list">
+                    <div class="px-4">
+                      <div class="event-date badge bg-success">2021</div>
+                      <!-- <h5 class="pt-2">Event One</h5> -->
+                      <ul class="text-muted text-start">
+                          <li>Acquisition of Oman plant</li>
+                          <li>Acquisition & start-up of Amicale Imperia (Jaipur plant)</li>
+                          <li>Acquisition of Mulshi, Natural Mineral Water Brand</li>                
+                          <br>
+                        </ul>
+                    </div>
+                  </li>
+
+                  <li class="list-inline-item items-list">
+                    <div class="px-4">
+                      <div class="event-date badge bg-danger">2022</div>
+                      <!-- <h5 class="pt-2">Event One</h5> -->
+                      <ul class="text-muted text-start">
+                          <li>Preform capacity addition by 120 tonnes</li>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                        </ul>
+                    </div>
+                  </li>
+
+                  <li class="list-inline-item items-list">
+                    <div class="px-4">
+                      <div class="event-date badge bg-primary">2023</div>
+                      <!-- <h5 class="pt-2">Event One</h5> -->
+                      <ul class="text-muted text-start">
+                          <li>Addition of leased preform plant Daman & capacity increased by 80 tonnes</li>
+                          <br>
+                          <br>
+                          <br>
+                        </ul>
+                    </div>
+                  </li>
+
+              </ul>
+      
+            </div>
+      
+          </div>
+        </div>
+      
+    </div>
 
     <!-- Appointment Start -->
-    <div class="container-fluid py-6 px-5">
+    <div class="container-fluid py-6 px-4 px-lg-5">
         <div class="row gx-5">
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <div class="mb-4">
                     <h1 class="display-5 text-uppercase mb-4">Request A <span class="text-primary">Call Back</span></h1>
                 </div>
-                <p class="mb-5">Nonumy ipsum amet tempor takimata vero ea elitr. Diam diam ut et eos duo duo sed. Lorem elitr sadipscing eos et ut et stet justo, sit dolore et voluptua labore. Ipsum erat et ea ipsum magna sadipscing lorem. Sit lorem sea sanctus eos. Sanctus sit tempor dolores ipsum stet justo sit erat ea, sed diam sanctus takimata sit. Et at voluptua amet erat justo amet ea ipsum eos, eirmod accusam sea sed ipsum kasd ut.</p>
-                <a class="btn btn-primary py-3 px-5" href="">Get A Quote</a>
+                <p class="mb-5">We value your time and are here to assist you with any inquiries or needs you may have. Please fill out the form below, and one of our dedicated team members will get back to you promptly. Whether you have questions about our products, need a quote, or require support, we're here to help. Let us know how we can serve you better!</p>
+                <!-- <a class="btn btn-primary py-3 px-4 px-lg-5" href="">Get A Quote</a> -->
             </div>
             <div class="col-lg-8">
                 <div class="bg-light text-center p-5">
@@ -219,7 +347,7 @@
                             <div class="col-12 col-sm-6">
                                 <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
                             </div>
-                            <div class="col-12 col-sm-6">
+                            <!-- <div class="col-12 col-sm-6">
                                 <div class="date" id="date" data-target-input="nearest">
                                     <input type="text"
                                         class="form-control border-0 datetimepicker-input"
@@ -232,7 +360,7 @@
                                         class="form-control border-0 datetimepicker-input"
                                         placeholder="Call Back Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-12">
                                 <textarea class="form-control border-0" rows="5" placeholder="Message"></textarea>
                             </div>
@@ -249,13 +377,13 @@
 
 
     <!-- Portfolio Start -->
-    <div class="container-fluid bg-light py-6 px-5">
+    <!-- <div class="container-fluid bg-light py-6 px-4 px-lg-5">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Some Of Our <span class="text-primary">Popular</span> Dream Projects</h1>
         </div>
         <div class="row gx-5">
             <div class="col-12 text-center">
-                <div class="d-inline-block bg-dark-radial text-center pt-4 px-5 mb-5">
+                <div class="d-inline-block bg-dark-radial text-center pt-4 px-4 px-lg-5 mb-5">
                     <ul class="list-inline mb-0" id="portfolio-flters">
                         <li class="btn btn-outline-primary bg-white p-2 active mx-2 mb-4" data-filter="*">
                             <img src="/static/img/portfolio-1.jpg" style="width: 150px; height: 100px;">
@@ -353,12 +481,58 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <!-- Portfolio End -->
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid bg-light py-6 px-4 px-lg-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Brands</span></h1>
+        </div>
+        <div class="row g-5 portfolio-container">
+            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="/static/img/kingfisher.jpg" alt="">
+                    <a class="portfolio-title shadow-sm" href="">
+                        <p class="h4 text-uppercase text-primary">KingFisher</p>
+                        <!-- <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span> -->
+                    </a>
+                    <a class="portfolio-btn" href= "#">
+                        <i class="bi bi-link-45deg text-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="/static/img/petnext.jpg" alt="">
+                    <a class="portfolio-title shadow-sm" href="">
+                        <p class="h4 text-uppercase text-primary">PetNext</p>
+                        <!-- <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span> -->
+                    </a>
+                    <a class="portfolio-btn" href= "#">
+                        <i class="bi bi-link-45deg text-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="/static/img/portfolio-3.jpg" alt="">
+                    <a class="portfolio-title shadow-sm" href="">
+                        <p class="h4 text-uppercase text-primary">Brand Name</p>
+                        <!-- <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span> -->
+                    </a>
+                    <a class="portfolio-btn" href= "#">
+                        <i class="bi bi-link-45deg text-white"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Portfolio End -->
 
 
     <!-- Team Start -->
-    <div class="container-fluid py-6 px-5">
+    <!-- <div class="container-fluid py-6 px-4 px-lg-5">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">We Are <span class="text-primary">Professional & Expert</span> Workers</h1>
         </div>
@@ -460,12 +634,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Team End -->
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-light py-6 px-5">
+    <!-- <div class="container-fluid bg-light py-6 px-4 px-lg-5">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">What Our <span class="text-primary">Happy Cleints</span> Say!!!</h1>
         </div>
@@ -506,12 +680,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
 
     <!-- Blog Start -->
-    <div class="container-fluid py-6 px-5">
+    <!-- <div class="container-fluid py-6 px-4 px-lg-5">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Latest <span class="text-primary">Articles</span> From Our Blog Post</h1>
         </div>
@@ -571,7 +745,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Blog End -->
     
 
