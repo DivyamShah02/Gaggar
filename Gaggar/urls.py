@@ -11,7 +11,12 @@ urlpatterns = [
     
     path(route='', view=home, name='home'),
     path(route='products/', view=products, name='products'),
+    path(route='rpet/', view=rpet, name='rpet'),
     path(route='about/', view=about, name='about'),
     path(route='contact/', view=contact, name='contact'),
+    
+    path(route='terms_conds/', view=terms_conds, name='terms_conds'),
+    path(route='privacy_policy/', view=privacy_policy, name='privacy_policy'),
+    path(route='cookies_policy/', view=cookies_policy, name='cookies_policy'),
     
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
