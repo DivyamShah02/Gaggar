@@ -1,0 +1,106 @@
+.image-container {
+    position: relative;
+    width: 100vw;
+    height: 50vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover; /* Scale the image while preserving aspect ratio */
+}
+
+.horizontal-timeline .items {
+    border-top: 3px solid #e9ecef;
+  }
+  
+  .horizontal-timeline .items .items-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    margin-right: 0;
+  }
+  
+  .horizontal-timeline .items .items-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #dee2e6;
+    top: 0;
+  }
+  
+  .horizontal-timeline .items .items-list .event-date {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding-top: 8px;
+  }
+  
+  @media (min-width: 1140px) {
+    .horizontal-timeline .items .items-list {
+      display: inline-block;
+      width: 24%;
+      padding-top: 45px;
+    }
+  
+    .horizontal-timeline .items .items-list .event-date {
+      top: -40px;
+    }
+  }
+
+
+
+@media (max-width: 576px) {
+    /* Small screen */
+    .text-size {
+        font-size: 20px !important; /* Small screen font size */
+        text-align: center !important;
+    }
+
+    .head-text-size {
+        font-size: 35px !important; /* Small screen font size */
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Medium screen */
+    .text-size {
+        font-size: 24px !important; /* Medium screen font size */
+        text-align: center !important;
+    }
+
+    .head-text-size {
+        font-size: 40px !important; /* Medium screen font size */
+    }
+}
+
+@media (min-width: 993px) {
+    /* Large screen */
+    .text-size {
+        font-size: 40px !important; /* Large screen font size */
+        text-align: center !important;
+    }
+
+    .head-text-size {
+        font-size: 50px !important; /* Large screen font size */
+    }
+}
+
+.centered-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;  /* Ensure the cell takes full height of the rows it spans */
+}
+
