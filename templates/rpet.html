@@ -3,26 +3,26 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GAGGAR ENTERPRISE</title>
+    <title>Gaggar Enterprise</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="/static/img/logo.png" rel="icon">
-
+    <link href="/static/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
+    <link href="/static/lib/animate/animate.min.css" rel="stylesheet">
     <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="/static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -30,28 +30,31 @@
 
     <!-- Template Stylesheet -->
     <link href="/static/css/style.css" rel="stylesheet">
-    <link href="/static/css/style_2.css" rel="stylesheet">
-
+    <link href="/static/css/timeline.css" rel="stylesheet">
 </head>
 
 <body>
-    {% include "header.html" %}
+    {% include 'header.html' %}
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header">
-        <h1 class="display-3 text-uppercase text-white mb-3">rPET</h1>
-        <div class="d-inline-flex text-white">
-            <h6 class="text-uppercase m-0"><a href="">Home</a></h6>
-            <h6 class="text-white m-0 px-3">/</h6>
-            <h6 class="text-uppercase text-white m-0">rPET</h6>
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-4 text-white animated slideInDown mb-3">rPet</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">rPet</li>
+                </ol>
+            </nav>
         </div>
     </div>
-    <!-- Page Header Start -->
+    <!-- Page Header End -->
 
     <!-- About Start -->
-    <div class="container-fluid py-6 px-4 px-lg-5">
+    <div class="container-xxl py-5 px-4 px-lg-5">
         <div class="row g-5">
-            <div class="col-lg-7">
+            <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
                 <h1 class="display-5 text-uppercase mb-4 head-text-size">BE THE <span class="text-primary">CHANGE.</span></h1>
                 <h4 class="text-uppercase mb-3 text-body">Leading the way in Gujarat as the first to adopt rPET technology, setting a benchmark for sustainable practices in the industry.</h4>
                 <p>‘We are leading the charge to protect our environment by reducing plastic waste destined for landfills’</p>
@@ -60,7 +63,7 @@
                 <!-- <img src="/static/img/signature.jpg" alt=""> -->
             </div>
 
-            <div class="col-lg-5 pb-5" style="min-height: 400px;">
+            <div class="col-lg-5 pb-5 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
                 <div class="position-relative bg-dark-radial h-100 ms-5">
                     <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="/static/img/rpet.jpg" style="object-fit: cover; border: 4px solid var(--primary);">
                 </div>
@@ -70,12 +73,12 @@
     </div>
     <!-- About End -->
 
-    <div class="container-fluid bg-light py-6 px-4 px-lg-5">
+    <div class="container-xxl bg-light py-5 px-4 px-lg-5">
         <div class="row">
-            <div class="col-lg-6 pb-5">
+            <div class="col-lg-6 pb-5 wow fadeIn" data-wow-delay="0.3s">
                 <img src="/static/img/rpet-bottle-2.jpg" class="w-100 h-100 mt-5 ms-n5" alt="">
             </div>
-            <div class="col-lg-6 col-12">
+            <div class="col-lg-6 col-12 wow fadeIn" data-wow-delay="0.5s">
                 <h1 class="display-5 text-uppercase head-text-size">Why use <span class="text-primary">rPET?</span></h1>
                 <h4>In line with the visionary initiatives of the Indian Government, there is a strategic roadmap in place aiming to escalate the usage of recycled polyethylene terephthalate (rPET) to 30% by the year 2026, with a subsequent phased increase to reach 60%. An integral aspect of this endeavor involves leveraging the distinctive properties of rPET, particularly its lower requirement for heat and temperature during the blowing process, thus contributing to both environmental sustainability and operational efficiency.</h4>
             </div>
@@ -83,7 +86,7 @@
     </div>
 
     <!-- Gallery Start -->
-    <div class="container-fluid py-6 px-4 px-lg-5">
+    <div class="container-xxl py-5 px-4 px-lg-5">
         <div class="container">
             <!-- <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
@@ -135,23 +138,73 @@
     </div>
     <!-- Gallery end -->
     
-        
-    {% include "footer.html" %}
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="display-6 mb-4">What Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="/static/img/user.png" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="/static/img/user.png" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="/static/img/user.png" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="/static/img/user.png" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    {% include 'footer.html' %}
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/lib/wow/wow.min.js"></script>
     <script src="/static/lib/easing/easing.min.js"></script>
     <script src="/static/lib/waypoints/waypoints.min.js"></script>
+    <script src="/static/lib/counterup/counterup.min.js"></script>
     <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="/static/lib/tempusdominus/js/moment.min.js"></script>
-    <script src="/static/lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="/static/lib/isotope/isotope.pkgd.min.js"></script>
     <script src="/static/lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->

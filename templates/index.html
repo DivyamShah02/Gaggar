@@ -3,25 +3,26 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GAGGAR ENTERPRISE</title>
+    <title>Gaggar Enterprise</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="/static/img/logo.png" rel="icon">
+    <link href="/static/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
+    <link href="/static/lib/animate/animate.min.css" rel="stylesheet">
     <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="/static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -29,38 +30,39 @@
 
     <!-- Template Stylesheet -->
     <link href="/static/css/style.css" rel="stylesheet">
-    <link href="/static/css/style_2.css" rel="stylesheet">
+    <link href="/static/css/timeline.css" rel="stylesheet">
 </head>
 
 <body>
-    {% include "header.html" %}
+{% include 'header.html' %}
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                    <img class="img-fluid" src="/static/img/carousel-1.jpg" alt="Image">
+                </button>
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2">
+                    <img class="img-fluid" src="/static/img/carousel-2.jpg" alt="Image">
+                </button>
+            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="image-container">
-                        <img src="/static/img/carousel-1.jpeg" alt="Image">
-                    </div>
-                    <!-- <img src="/static/img/carousel-1.jpeg" alt="Image"> -->
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <img class="w-100" src="/static/img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <!-- <i class="fa fa-home fa-4x text-primary mb-4 d-none d-sm-block"></i> -->
-                            <h1 class="text-uppercase text-white mb-md-4 text-size">We sculpt solutions that redefine the industry.</h1>
-                            <a href="{% url 'contact' %}" class="btn btn-primary py-md-3 px-md-5 mt-2">Contact Us</a>
+                            <h4 class="text-white text-uppercase mb-4 animated zoomIn">Leader Of Pet Preforms industry</h4>
+                            <h1 class="display-1 text-white mb-0 animated zoomIn">We Are In Business From Past 2 Decades</h1>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="image-container">
-                        <img class="" src="/static/img/carousel-2.jpeg" alt="Image">
-                    </div>
-                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <img class="w-100" src="/static/img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <!-- <i class="fa fa-tools fa-4x text-primary mb-4 d-none d-sm-block"></i> -->
-                            <h1 class="text-uppercase text-white mb-md-4 text-size">We Are In Business From Past 2 Decades</h1>
-                            <a href="{% url 'contact' %}" class="btn btn-primary py-md-3 px-md-5 mt-2">Contact Us</a>
+                            <h4 class="text-white text-uppercase mb-4 animated zoomIn">Leader Of Pet Preforms industry</h4>
+                            <h1 class="display-1 text-white mb-0 animated zoomIn">We sculpt solutions that redefine the industry.</h1>
                         </div>
                     </div>
                 </div>
@@ -79,50 +81,228 @@
     </div>
     <!-- Carousel End -->
 
-    <!-- About Start -->
-    <div class="container-fluid py-6 px-4 px-lg-5">
-        <div class="row g-5">
-            <div class="col-lg-7">
-                <h1 class="display-5 text-uppercase mb-4 head-text-size">Over <span class="text-primary">25 years</span> in FMCG and packaging product industry.</h1>
-                <h4 class="text-uppercase mb-3 text-body">The Ahmedabad plant has 2 main divisions, Preform Manufacturing and Water Production integrated with Packaging.</h4>
-                <p>It is a Fully Automated plant having an End-To-End Process completely In-house right from the stage of Preform manufacturing, blowing bottles, filling & packaging all done under one single roof to ensure quality in the product.</p>
-                <div class="row gx-5 py-2">
-                    <div class="col-sm-6 mb-2">
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Perfect Planning</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Professional Workers</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>First Working Process</p>
-                    </div>
-                    <div class="col-sm-6 mb-2">
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Efficient Execution</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Customer Focus</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Advanced Technology</p>
 
+    <!-- Facts Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Years Experience</h5>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">25</h1>
                     </div>
                 </div>
-                <p class="mb-4">For the past 2 years, we have started exporting 29/25 PET Preforms in Oman, having our depot at Sohar.</p>
-                <!-- <img src="/static/img/signature.jpg" alt=""> -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Team Members</h5>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">250</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-users fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Satisfied Clients</h5>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">3000</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-check fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Projects Done</h5>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">4500</h1>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-5 pb-5" style="min-height: 400px;">
-                <div class="position-relative bg-dark-radial h-100 ms-5">
-                    <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="/static/img/about.jpeg" style="object-fit: cover;">
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="img-border">
+                        <img class="img-fluid" src="/static/img/about.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                        <h1 class="display-6 mb-4">Over <span class="text-primary">25 years </span>in FMCG and packaging product industry.</h1>
+                        <p>The Ahmedabad plant has 2 main divisions, Preform Manufacturing and Water Production integrated with Packaging.</p>
+                        <p class="mb-4">It is a Fully Automated plant having an End-To-End Process completely In-house right from the stage of Preform manufacturing, blowing bottles, filling & packaging all done under one single roof to ensure quality in the product.</p>
+                        <div class="row gx-5 py-2">
+                            <div class="col-sm-6 mb-2">
+                                <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Perfect Planning</p>
+                                <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Professional Workers</p>
+                                <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>First Working Process</p>
+                            </div>
+                            <div class="col-sm-6 mb-2">
+                                <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Efficient Execution</p>
+                                <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Customer Focus</p>
+                                <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Advanced Technology</p>
+        
+                            </div>
+                        </div>
+                        <p class="mb-4">For the past 2 years, we have started exporting 29/25 PET Preforms in Oman, having our depot at Sohar.</p>
+                        <!-- <div class="d-flex align-items-center mb-4 pb-2">
+                            <img class="flex-shrink-0 rounded-circle" src="/static/img/team-1.jpg" alt="" style="width: 50px; height: 50px;">
+                            <div class="ps-4">
+                                <h6>Jhon Doe</h6>
+                                <small>SEO & Founder</small>
+                            </div>
+                        </div> -->
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
-    
-    <!-- why us Start -->
-    <div class="container-fluid bg-light py-6 px-4 px-lg-5">
-        <div class="content-lg">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 mb-3">
-                    <div class="margin-t-50 margin-b-30">
-                        <h1 class="text-primary">Why Us?</h1>
-                        <p>We are one of the leading manufacturers of PET-preforms serving multiple industries for the last 1 and a half decades.  We provide a wide array of PET-preforms to various beverages, edible oils, and various other groups across the nation. With strong experience in plastic packaging, PetNext has expanded its product line and range of services immensely over the years. We have the potential to manufacture 800 Tons of PET-preforms across various industries and applications, and PetNext believes in expanding this further over the years.</p>
-                    </div>
-                    <!-- <a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">More...</a> -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Products</h6>
+                <h1 class="display-6 mb-4">We Focus On Making The Best In All Sectors</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="/static/img/preforms/Water-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <h4 class="mb-0">Preforms for Water</h4>
+                    </a>
                 </div>
-                <div class="col-lg-6 col-md-6 mb-3">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="/static/img/preforms/Carbonated-Drinks-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <h4 class="mb-0">Preforms for CSD/ Carbonated Drinks</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="/static/img/preforms/Oil-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <h4 class="mb-0">Preforms for Edible Oil</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="/static/img/preforms/Pharma-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <h4 class="mb-0">Preforms for Pharma</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="/static/img/preforms/Dairy-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <h4 class="mb-0">Preforms for Dairy</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="/static/img/preforms/Cosmetics-Preform-1200-x-675-px-800x588.jpg" alt="">
+                        <h4 class="mb-0">Preforms for Cosmetics</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="/static/img/preforms/Juice-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <h4 class="mb-0">Preforms for Juices</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="/static/img/preforms/Liquor-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <h4 class="mb-0">Preforms for Liquor</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="/static/img/preforms/Sports-Drinks-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <h4 class="mb-0">Preforms for Energy/ Sports Drinks</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="/static/img/preforms/20Ltr-Preform-1200-x-675-px-800x588.jpg" alt="">
+                        <h4 class="mb-0">Preforms for 20 Litre/ 5 Gallon Water Bottles</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="/static/img/preforms/Jar-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <h4 class="mb-0">Preforms for Jars</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="/static/img/preforms/Dairy-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <h4 class="mb-0">Customize Preforms</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="h-100">
+                        <h6 class="section-title bg-white text-start text-primary pe-3">Why Choose Us</h6>
+                        <h1 class="display-6 mb-4">Why Businesses Trust Us?</h1>
+                        <p class="mb-4">We are one of the leading manufacturers of PET-preforms serving multiple industries for the last 1 and a half decades. We provide a wide array of PET-preforms to various beverages, edible oils, and various other groups across the nation. With strong experience in plastic packaging, PetNext has expanded its product line and range of services immensely over the years. We have the potential to manufacture 800 Tons of PET-preforms across various industries and applications, and PetNext believes in expanding this further over the years.</p>
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Quality</p>
+                                        <p class="mb-2">100%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Pricing</p>
+                                        <p class="mb-2">95%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Service</p>
+                                        <p class="mb-2">95%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="img-border">
+                        <img class="img-fluid" src="/static/img/feature.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                           <h2 class="accordion-header">
@@ -161,15 +341,105 @@
                           </div>
                         </div>
                       </div>
+                      
                 </div>
+
             </div>
-            <!--// end row -->
         </div>
     </div>
-    <!-- why us end -->
+    <!-- Feature End -->
+
+
+     <!-- Services Start -->
+     <div class="container-fluid py-6 px-4 px-lg-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-5 pb-5">We Provide <span class="text-primary">The Best</span> Services</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6 mb-5 mt-5">
+                <div class="service-item bg-white d-flex flex-column align-items-center text-center py-5">
+                    <!-- <img class="img-fluid" src="/static/img/service-1.jpg" alt=""> -->
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-building text-primary"></i>
+                    </div>
+                    <div class="p-4 pb-1">
+                        <h4 class="text-uppercase mb-3">Management Excellence</h4>
+                        <p>Our leadership team boasts extensive experience in the plastic packaging and PET industry. This seasoned group oversees every aspect of our operations, ensuring that our products meet the highest standards.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5 mt-5">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center py-5">
+                    <!-- <img class="img-fluid" src="/static/img/service-2.jpg" alt=""> -->
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-lightbulb text-primary"></i>
+                    </div>
+                    <div class="p-4 pb-1">
+                        <h4 class="text-uppercase mb-3">Uncompromising Quality</h4>
+                        <p>Quality is the cornerstone of our operations. We employ stringent quality control measures to guarantee that each PET preform meets our exacting standards. Our commitment to quality extends from material selection to the final product.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5 mt-5">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center py-5">
+                    <!-- <img class="img-fluid" src="/static/img/service-3.jpg" alt=""> -->
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-recycle text-primary"></i>
+                    </div>
+                    <div class="p-4 pb-1">
+                        <h4 class="text-uppercase mb-3">Environmental Responsibility</h4>
+                        <p>We are deeply committed to environmental sustainability. Our innovative manufacturing processes prioritize eco-friendly practices, minimizing waste and carbon footprint.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5 mt-5">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center py-5">
+                    <!-- <img class="img-fluid" src="/static/img/service-4.jpg" alt=""> -->
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-cubes text-primary"></i>
+                    </div>
+                    <div class="p-4 pb-1">
+                        <h4 class="text-uppercase mb-3">Corporate Culture</h4>
+                        <p>Our company culture is centered around collaboration, innovation, and continuous improvement. Our teams work together seamlessly, constantly seeking new ways to enhance our products and services.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5 mt-5">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center py-5">
+                    <!-- <img class="img-fluid" src="/static/img/service-5.jpg" alt=""> -->
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-chart-line text-primary"></i>
+                    </div>
+                    <div class="p-4 pb-1">
+                        <h4 class="text-uppercase mb-3">Mission-driven</h4>
+                        <p>We are driven by a clear mission: to deliver exceptional PET preforms that help our clients achieve their goals. Every decision we make is guided by this mission, ensuring that our products and services always serve the best interests.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5 mt-5">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center py-5">
+                    <!-- <img class="img-fluid" src="/static/img/service-6.jpg" alt=""> -->
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-cogs text-primary"></i>
+                    </div>
+                    <div class="p-4 pb-1">
+                        <h4 class="text-uppercase mb-3">Innovative Solutions</h4>
+                        <p>We are at the forefront of industry innovation, continuously developing new solutions to meet the changing demands of the market. Our cutting-edge technology ensures that we provide the most advanced and efficient PET preform products</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
 
     <!-- Gallery Start -->
-    <div class="container-fluid py-6 px-4 px-lg-5">
+    <div class="container-fluid py-5 px-4 px-lg-5">
         <div class="container">
             <!-- <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
@@ -221,8 +491,286 @@
     </div>
     <!-- Gallery end -->
 
+    <!-- Project Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Our Products</h6>
+                <h1 class="display-6 mb-4">Learn More About Our Wide Range of Products</h1>
+            </div>
+            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="project-item border rounded h-100 p-4" data-dot="01">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/preforms/Water-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <a href="/static/img/preforms/Water-Preform-1200x675-new-main-800x588.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Preforms for Water</h6>
+                    <span>SUB-DATA</span>
+                </div>
+                <div class="project-item border rounded h-100 p-4" data-dot="02">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/preforms/Carbonated-Drinks-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <a href="/static/img/preforms/Carbonated-Drinks-Preform-1200x675-new-main-800x588.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Preforms for CSD/ Carbonated Drinks</h6>
+                    <span>SUB-DATA</span>
+                </div>
+                <div class="project-item border rounded h-100 p-4" data-dot="03">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/preforms/Oil-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <a href="/static/img/preforms/Oil-Preform-1200x675-new-main-800x588.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Preforms for Edible Oil</h6>
+                    <span>SUB-DATA</span>
+                </div>
+                <div class="project-item border rounded h-100 p-4" data-dot="04">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/preforms/Pharma-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <a href="/static/img/preforms/Pharma-Preform-1200x675-new-main-800x588.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Preforms for Pharma</h6>
+                    <span>SUB-DATA</span>
+                </div>
+                <div class="project-item border rounded h-100 p-4" data-dot="05">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/preforms/Dairy-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <a href="/static/img/preforms/Dairy-Preform-1200x675-new-main-800x588.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Preforms for Dairy</h6>
+                    <span>SUB-DATA</span>
+                </div>
+                <div class="project-item border rounded h-100 p-4" data-dot="06">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/preforms/Cosmetics-Preform-1200-x-675-px-800x588.jpg" alt="">
+                        <a href="/static/img/preforms/Cosmetics-Preform-1200-x-675-px-800x588.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Preforms for Cosmetics</h6>
+                    <span>SUB-DATA</span>
+                </div>
+                <div class="project-item border rounded h-100 p-4" data-dot="07">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/preforms/Juice-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <a href="/static/img/preforms/Juice-Preform-1200x675-new-main-800x588.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Preforms for Juices</h6>
+                    <span>SUB-DATA</span>
+                </div>
+                <div class="project-item border rounded h-100 p-4" data-dot="08">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/preforms/Liquor-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <a href="/static/img/preforms/Liquor-Preform-1200x675-new-main-800x588.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Preforms for Liquor</h6>
+                    <span>SUB-DATA</span>
+                </div>
+                <div class="project-item border rounded h-100 p-4" data-dot="09">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/preforms/Sports-Drinks-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <a href="/static/img/preforms/Sports-Drinks-Preform-1200x675-new-main-800x588.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Preforms for Energy/ Sports Drinks</h6>
+                    <span>SUB-DATA</span>
+                </div>
+                <div class="project-item border rounded h-100 p-4" data-dot="10">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/preforms/20Ltr-Preform-1200-x-675-px-800x588.jpg" alt="">
+                        <a href="/static/img/preforms/20Ltr-Preform-1200-x-675-px-800x588.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Preforms for 20 Litre/ 5 Gallon Water Bottles</h6>
+                    <span>SUB-DATA</span>
+                </div>
+                <div class="project-item border rounded h-100 p-4" data-dot="11">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/preforms/Jar-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <a href="/static/img/preforms/Jar-Preform-1200x675-new-main-800x588.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Preforms for Jars</h6>
+                    <span>SUB-DATA</span>
+                </div>
+                <div class="project-item border rounded h-100 p-4" data-dot="12">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/preforms/Dairy-Preform-1200x675-new-main-800x588.jpg" alt="">
+                        <a href="/static/img/preforms/Dairy-Preform-1200x675-new-main-800x588.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Customize Preforms</h6>
+                    <span>SUB-DATA</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+    <!-- Clients Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Our Clients</h6>
+                <h1 class="display-6 mb-4">Some Of The Premium Clients</h1>
+            </div>
+            <div class="owl-carousel no-dots client-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/aava.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/ankur.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/apollo.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/bmw.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/crownplaza.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/doubletree.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/gokul.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/hcg.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/holidayinn.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/kingfisher.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/ldc.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/lemontree.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/mcdowells.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/mercedes.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/nkproteins.png" alt="">
+                    </div>                    
+                </div>
+                <div class="project-item border rounded h-100 p-4">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="/static/img/clients/novotel.png" alt="">
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Clients End -->
+
+    <!-- Time line Start -->
+    <div class="bg-light py-5 px-4 px-lg-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-5 pb-5">Time <span class="text-primary">Line</span></h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+        
+            <div class="horizontal-timeline">
+        
+                <ul class="list-inline items">
+                <li class="list-inline-item items-list">
+                    <div class="px-4">
+                    <div class="event-date badge bg-info">2020</div>
+                    <!-- <h5 class="pt-2">Event One</h5> -->
+                    <ul class="text-muted text-start">
+                        <li>Induction of new partners</li>
+                        <li>Increase and influx of new equity</li>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-inline-item items-list">
+                    <div class="px-4">
+                        <div class="event-date badge bg-success">2021</div>
+                        <!-- <h5 class="pt-2">Event One</h5> -->
+                        <ul class="text-muted text-start">
+                            <li>Acquisition of Oman plant</li>
+                            <li>Acquisition & start-up of Amicale Imperia (Jaipur plant)</li>
+                            <li>Acquisition of Mulshi, Natural Mineral Water Brand</li>                
+                            <br>
+                        </ul>
+                    </div>
+                    </li>
+
+                    <li class="list-inline-item items-list">
+                    <div class="px-4">
+                        <div class="event-date badge bg-danger">2022</div>
+                        <!-- <h5 class="pt-2">Event One</h5> -->
+                        <ul class="text-muted text-start">
+                            <li>Preform capacity addition by 120 tonnes</li>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </ul>
+                    </div>
+                    </li>
+
+                    <li class="list-inline-item items-list">
+                    <div class="px-4">
+                        <div class="event-date badge bg-primary">2023</div>
+                        <!-- <h5 class="pt-2">Event One</h5> -->
+                        <ul class="text-muted text-start">
+                            <li>Addition of leased preform plant Daman & capacity increased by 80 tonnes</li>
+                            <br>
+                            <br>
+                            <br>
+                        </ul>
+                    </div>
+                    </li>
+
+                </ul>
+        
+            </div>
+        
+            </div>
+        </div>
+        
+    </div>
+    <!-- Time line End -->
+
     <!-- locations Start -->
-    <div class="container-fluid bg-light py-6 px-4 px-lg-5 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+    <div class="container-fluid py-6 px-4 px-lg-5 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
         <div class="container py-3">
             <div class="text-center mx-auto mb-5" style="max-width: 600px;">
                 <h1 class="display-5 text-uppercase mb-5 pb-5">Our <span class="text-primary">Locations</span></h1>
@@ -379,644 +927,137 @@
     </div>
     <!-- locations end -->
 
-    <!-- Services Start -->
-    <div class="container-fluid py-6 px-4 px-lg-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-5 pb-5">We Provide <span class="text-primary">The Best</span> Services</h1>
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-4 col-md-6 mb-5 mt-5">
-                <div class="service-item bg-white d-flex flex-column align-items-center text-center">
-                    <!-- <img class="img-fluid" src="/static/img/service-1.jpg" alt=""> -->
-                    <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-building text-primary"></i>
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Management Excellence</h4>
-                        <p>Our leadership team boasts extensive experience in the plastic packaging and PET industry. This seasoned group oversees every aspect of our operations, ensuring that our products meet the highest standards.</p>
-                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5 mt-5">
-                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <!-- <img class="img-fluid" src="/static/img/service-2.jpg" alt=""> -->
-                    <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-lightbulb text-primary"></i>
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Uncompromising Quality</h4>
-                        <p>Quality is the cornerstone of our operations. We employ stringent quality control measures to guarantee that each PET preform meets our exacting standards. Our commitment to quality extends from material selection to the final product, earning us a reputation for reliability and consistency.</p>
-                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5 mt-5">
-                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <!-- <img class="img-fluid" src="/static/img/service-3.jpg" alt=""> -->
-                    <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-recycle text-primary"></i>
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Environmental Responsibility</h4>
-                        <p>We are deeply committed to environmental sustainability. Our innovative manufacturing processes prioritize eco-friendly practices, minimizing waste and carbon footprint. By choosing PETNEXT, businesses not only benefit from superior products but also contribute to a greener, more sustainable future.</p>
-                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5 mt-5">
-                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <!-- <img class="img-fluid" src="/static/img/service-4.jpg" alt=""> -->
-                    <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-cubes text-primary"></i>
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Corporate Culture</h4>
-                        <p>Our company culture is centered around collaboration, innovation, and continuous improvement. Our teams work together seamlessly, constantly seeking new ways to enhance our products and services. This culture of innovation ensures that we stay at the forefront of the industry, delivering cutting-edge solutions to our clients.</p>
-                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5 mt-5">
-                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <!-- <img class="img-fluid" src="/static/img/service-5.jpg" alt=""> -->
-                    <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-chart-line text-primary"></i>
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Mission-driven</h4>
-                        <p>We are driven by a clear mission: to deliver exceptional PET preforms that help our clients achieve their goals. Every decision we make is guided by this mission, ensuring that our products and services always serve the best interests of our clients.</p>
-                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5 mt-5">
-                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <!-- <img class="img-fluid" src="/static/img/service-6.jpg" alt=""> -->
-                    <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-cogs text-primary"></i>
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Innovative Solutions</h4>
-                        <p>We are at the forefront of industry innovation, continuously developing new solutions to meet the changing demands of the market. Our cutting-edge technology and forward-thinking approach ensure that we provide the most advanced and efficient PET preform products</p>
-                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services End -->
-
-    <!-- Time line Start -->
-    <div class="container-fluid bg-light py-6 px-4 px-lg-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-5 pb-5">Time <span class="text-primary">Line</span></h1>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-      
-            <div class="horizontal-timeline">
-      
-              <ul class="list-inline items">
-                <li class="list-inline-item items-list">
-                  <div class="px-4">
-                    <div class="event-date badge bg-info">2020</div>
-                    <!-- <h5 class="pt-2">Event One</h5> -->
-                    <ul class="text-muted text-start">
-                        <li>Induction of new partners</li>
-                        <li>Increase and influx of new equity</li>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                      </ul>
-                  </div>
-                </li>
-
-                <li class="list-inline-item items-list">
-                    <div class="px-4">
-                      <div class="event-date badge bg-success">2021</div>
-                      <!-- <h5 class="pt-2">Event One</h5> -->
-                      <ul class="text-muted text-start">
-                          <li>Acquisition of Oman plant</li>
-                          <li>Acquisition & start-up of Amicale Imperia (Jaipur plant)</li>
-                          <li>Acquisition of Mulshi, Natural Mineral Water Brand</li>                
-                          <br>
-                        </ul>
-                    </div>
-                  </li>
-
-                  <li class="list-inline-item items-list">
-                    <div class="px-4">
-                      <div class="event-date badge bg-danger">2022</div>
-                      <!-- <h5 class="pt-2">Event One</h5> -->
-                      <ul class="text-muted text-start">
-                          <li>Preform capacity addition by 120 tonnes</li>
-                          <br>
-                          <br>
-                          <br>
-                          <br>
-                        </ul>
-                    </div>
-                  </li>
-
-                  <li class="list-inline-item items-list">
-                    <div class="px-4">
-                      <div class="event-date badge bg-primary">2023</div>
-                      <!-- <h5 class="pt-2">Event One</h5> -->
-                      <ul class="text-muted text-start">
-                          <li>Addition of leased preform plant Daman & capacity increased by 80 tonnes</li>
-                          <br>
-                          <br>
-                          <br>
-                        </ul>
-                    </div>
-                  </li>
-
-              </ul>
-      
-            </div>
-      
-          </div>
-        </div>
-      
-    </div>
-    <!-- Time line End -->
-
-    <!-- clients Start -->
-    <div class="container-fluid py-6 px-4 px-lg-5">
-        <div class="text-center mx-auto" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-5 pb-5">Our <span class="text-primary">Clients</span></h1>
-        </div>
-        <div class="container-fluid wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container py-5 mb-5">
-                <div class="bg-white">
-                    <div class="owl-carousel vendor-carousel">
-                        <img src="/static/img/clients/aava.png" alt="">
-                        <img src="/static/img/clients/ankur.png" alt="">
-                        <img src="/static/img/clients/apollo.png" alt="">
-                        <img src="/static/img/clients/bmw.png" alt="">
-                        <img src="/static/img/clients/crownplaza.png" alt="">
-                        <img src="/static/img/clients/doubletree.png" alt="">
-                        <img src="/static/img/clients/gokul.png" alt="">
-                        <img src="/static/img/clients/hcg.png" alt="">
-                        <img src="/static/img/clients/holidayinn.png" alt="">
-                        <img src="/static/img/clients/kingfisher.png" alt="">
-                        <img src="/static/img/clients/ldc.png" alt="">
-                        <img src="/static/img/clients/lemontree.png" alt="">
-                        <img src="/static/img/clients/mcdowells.png" alt="">
-                        <img src="/static/img/clients/mercedes.png" alt="">
-                        <img src="/static/img/clients/nkproteins.png" alt="">
-                        <img src="/static/img/clients/novotel.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Clients End -->
-
-    <!-- Appointment Start -->
-    <div class="container-fluid bg-light py-6 px-4 px-lg-5">
-        <div class="row gx-5">
-            <div class="col-lg-4 mb-5 mb-lg-0">
-                <div class="mb-4">
-                    <h1 class="display-5 text-uppercase mb-4">Request A <span class="text-primary">Call Back</span></h1>
-                </div>
-                <p class="mb-5">We value your time and are here to assist you with any inquiries or needs you may have. Please fill out the form below, and one of our dedicated team members will get back to you promptly. Whether you have questions about our products, need a quote, or require support, we're here to help. Let us know how we can serve you better!</p>
-                <!-- <a class="btn btn-primary py-3 px-4 px-lg-5" href="">Get A Quote</a> -->
-            </div>
-            <div class="col-lg-8">
-                <div class="bg-light text-center p-lg-5">
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
-                            </div>
-                            <!-- <div class="col-12 col-sm-6">
-                                <div class="date" id="date" data-target-input="nearest">
-                                    <input type="text"
-                                        class="form-control border-0 datetimepicker-input"
-                                        placeholder="Call Back Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="time" id="time" data-target-input="nearest">
-                                    <input type="text"
-                                        class="form-control border-0 datetimepicker-input"
-                                        placeholder="Call Back Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
-                            </div> -->
-                            <div class="col-12">
-                                <textarea class="form-control border-0" rows="5" placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Submit Request</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Appointment End -->
-
-
-    <!-- Portfolio Start -->
-    <!-- <div class="container-fluid bg-light py-6 px-4 px-lg-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-4">Some Of Our <span class="text-primary">Popular</span> Dream Projects</h1>
-        </div>
-        <div class="row gx-5">
-            <div class="col-12 text-center">
-                <div class="d-inline-block bg-dark-radial text-center pt-4 px-4 px-lg-5 mb-5">
-                    <ul class="list-inline mb-0" id="portfolio-flters">
-                        <li class="btn btn-outline-primary bg-white p-2 active mx-2 mb-4" data-filter="*">
-                            <img src="/static/img/portfolio-1.jpg" style="width: 150px; height: 100px;">
-                            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center" style="background: rgba(4, 15, 40, .3);">
-                                <h6 class="text-white text-uppercase m-0">All</h6>
-                            </div>
-                        </li>
-                        <li class="btn btn-outline-primary bg-white p-2 mx-2 mb-4" data-filter=".first">
-                            <img src="/static/img/portfolio-2.jpg" style="width: 150px; height: 100px;">
-                            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center" style="background: rgba(4, 15, 40, .3);">
-                                <h6 class="text-white text-uppercase m-0">Construction</h6>
-                            </div>
-                        </li>
-                        <li class="btn btn-outline-primary bg-white p-2 mx-2 mb-4" data-filter=".second">
-                            <img src="/static/img/portfolio-3.jpg" style="width: 150px; height: 100px;">
-                            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center" style="background: rgba(4, 15, 40, .3);">
-                                <h6 class="text-white text-uppercase m-0">Renovation</h6>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row g-5 portfolio-container">
-            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="/static/img/portfolio-1.jpg" alt="">
-                    <a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase">Project Name</p>
-                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
-                    </a>
-                    <a class="portfolio-btn" href="/static/img/portfolio-1.jpg" data-lightbox="portfolio">
-                        <i class="bi bi-plus text-white"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="/static/img/portfolio-2.jpg" alt="">
-                    <a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase">Project Name</p>
-                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
-                    </a>
-                    <a class="portfolio-btn" href="/static/img/portfolio-2.jpg" data-lightbox="portfolio">
-                        <i class="bi bi-plus text-white"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="/static/img/portfolio-3.jpg" alt="">
-                    <a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase">Project Name</p>
-                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
-                    </a>
-                    <a class="portfolio-btn" href="/static/img/portfolio-3.jpg" data-lightbox="portfolio">
-                        <i class="bi bi-plus text-white"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="/static/img/portfolio-4.jpg" alt="">
-                    <a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase">Project Name</p>
-                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
-                    </a>
-                    <a class="portfolio-btn" href="/static/img/portfolio-4.jpg" data-lightbox="portfolio">
-                        <i class="bi bi-plus text-white"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="/static/img/portfolio-5.jpg" alt="">
-                    <a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase">Project Name</p>
-                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
-                    </a>
-                    <a class="portfolio-btn" href="/static/img/portfolio-5.jpg" data-lightbox="portfolio">
-                        <i class="bi bi-plus text-white"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="/static/img/portfolio-6.jpg" alt="">
-                    <a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase">Project Name</p>
-                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
-                    </a>
-                    <a class="portfolio-btn" href="/static/img/portfolio-6.jpg" data-lightbox="portfolio">
-                        <i class="bi bi-plus text-white"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Portfolio End -->
-
-    <!-- bramds Start -->
-    <div class="container-fluid py-6 px-4 px-lg-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Brands</span></h1>
-        </div>
-        <div class="row g-5 portfolio-container">
-            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="/static/img/kingfisher.png" alt="">
-                    <a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase text-primary">KingFisher</p>
-                        <!-- <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span> -->
-                    </a>
-                    <a class="portfolio-btn" href= "#">
-                        <i class="bi bi-link-45deg text-white"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="/static/img/petnext.jpg" alt="">
-                    <a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase text-primary">PetNext</p>
-                        <!-- <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span> -->
-                    </a>
-                    <a class="portfolio-btn" href= "#">
-                        <i class="bi bi-link-45deg text-white"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="/static/img/evoq.png" alt="">
-                    <a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase text-primary">Evoq</p>
-                        <!-- <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span> -->
-                    </a>
-                    <a class="portfolio-btn" href= "#">
-                        <i class="bi bi-link-45deg text-white"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- brands End -->
-
-
     <!-- Team Start -->
-    <!-- <div class="container-fluid py-6 px-4 px-lg-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-4">We Are <span class="text-primary">Professional & Expert</span> Workers</h1>
-        </div>
-        <div class="row g-5">
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="/static/img/team-1.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Adam Phillips</h4>
-                            <span>CEO & Founder</span>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Our Team</h6>
+                <h1 class="display-6 mb-4">Meet Our Hardworking Team</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item text-center p-4">
+                        <img class="img-fluid border rounded-circle w-75 p-2 mb-4" src="/static/img/user.png" alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Full Name</h5>
+                                <span>Designation</span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="/static/img/team-2.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Dylan Adams</h4>
-                            <span>Civil Engineer</span>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item text-center p-4">
+                        <img class="img-fluid border rounded-circle w-75 p-2 mb-4" src="/static/img/user.png" alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Full Name</h5>
+                                <span>Designation</span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="/static/img/team-3.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Jhon Doe</h4>
-                            <span>Interior Designer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="/static/img/team-4.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Josh Dunn</h4>
-                            <span>Painter</span>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item text-center p-4">
+                        <img class="img-fluid border rounded-circle w-75 p-2 mb-4" src="/static/img/user.png" alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Full Name</h5>
+                                <span>Designation</span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- Team End -->
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-light py-6 px-4 px-lg-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-4">What Our <span class="text-primary">Happy Cleints</span> Say!!!</h1>
-        </div>
-        <div class="row gx-0 align-items-center">
-            <div class="col-xl-4 col-lg-5 d-none d-lg-block">
-                <img class="img-fluid w-100 h-100" src="/static/img/testimonial.jpg">
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="display-6 mb-4">What Our Clients Say!</h1>
             </div>
-            <div class="col-xl-8 col-lg-7 col-md-12">
-                <div class="testimonial bg-light">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="row gx-4 align-items-center">
-                            <div class="col-xl-4 col-lg-5 col-md-5">
-                                <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0" src="/static/img/testimonial-1.jpg" alt="">
-                            </div>
-                            <div class="col-xl-8 col-lg-7 col-md-7">
-                                <h4 class="text-uppercase mb-0">Client Name</h4>
-                                <p>Profession</p>
-                                <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> Dolores sed duo
-                                    clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
-                                    lorem magna ut labore et tempor diam tempor erat. Erat dolor rebum sit
-                                    ipsum.</p>
-                            </div>
-                        </div>
-                        <div class="row gx-4 align-items-center">
-                            <div class="col-xl-4 col-lg-5 col-md-5">
-                                <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0" src="/static/img/testimonial-2.jpg" alt="">
-                            </div>
-                            <div class="col-xl-8 col-lg-7 col-md-7">
-                                <h4 class="text-uppercase mb-0">Client Name</h4>
-                                <p>Profession</p>
-                                <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> Dolores sed duo
-                                    clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
-                                    lorem magna ut labore et tempor diam tempor erat. Erat dolor rebum sit
-                                    ipsum.</p>
-                            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="/static/img/user.png" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
                         </div>
                     </div>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="/static/img/user.png" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="/static/img/user.png" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="/static/img/user.png" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                 </div>
             </div>
         </div>
     </div>
-    
     <!-- Testimonial End -->
 
 
-    <!-- Blog Start -->
-    <!-- <div class="container-fluid py-6 px-4 px-lg-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-4">Latest <span class="text-primary">Articles</span> From Our Blog Post</h1>
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
-                <div class="bg-light">
-                    <img class="img-fluid" src="/static/img/blog-1.jpg" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-4">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="/static/img/user.jpg" width="35" height="35" alt="">
-                                <span>John Doe</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <span class="ms-3"><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</span>
-                            </div>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Rebum diam clita lorem erat magna est erat</h4>
-                        <a class="text-uppercase fw-bold" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="bg-light">
-                    <img class="img-fluid" src="/static/img/blog-2.jpg" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-4">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="/static/img/user.jpg" width="35" height="35" alt="">
-                                <span>John Doe</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <span class="ms-3"><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</span>
-                            </div>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Rebum diam clita lorem erat magna est erat</h4>
-                        <a class="text-uppercase fw-bold" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="bg-light">
-                    <img class="img-fluid" src="/static/img/blog-3.jpg" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-4">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="/static/img/user.jpg" width="35" height="35" alt="">
-                                <span>John Doe</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <span class="ms-3"><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</span>
-                            </div>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Rebum diam clita lorem erat magna est erat</h4>
-                        <a class="text-uppercase fw-bold" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Blog End -->
-    
-
-    {% include "footer.html" %}
-
+    {% include 'footer.html' %}
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/lib/wow/wow.min.js"></script>
     <script src="/static/lib/easing/easing.min.js"></script>
     <script src="/static/lib/waypoints/waypoints.min.js"></script>
+    <script src="/static/lib/counterup/counterup.min.js"></script>
     <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="/static/lib/tempusdominus/js/moment.min.js"></script>
-    <script src="/static/lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="/static/lib/isotope/isotope.pkgd.min.js"></script>
     <script src="/static/lib/lightbox/js/lightbox.min.js"></script>
-    <script src="/static/lib/wow/wow.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="/static/js/main.js"></script>
