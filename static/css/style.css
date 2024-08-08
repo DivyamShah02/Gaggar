@@ -14,6 +14,19 @@
     z-index: 99;
 }
 
+#brandMobile {
+    display: none;
+}
+
+.sticky #brandMobile {
+    display: block;
+}
+
+.navbar-toggler {
+    margin-left: auto; /* Pushes the button to the right edge of the navbar */
+    z-index: 1020; /* Ensure it stays above other content */
+}
+
 .owl-carousel.no-dots .owl-dot {
     display: none;
 }
